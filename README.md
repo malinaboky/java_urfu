@@ -1,6 +1,6 @@
 # Домашка №2
 
-![](src/main/resources/static/img/sNjKmfIZWoo.jpg)
+![](img/sNjKmfIZWoo.jpg)
 
 Всего в @SpringBootApplication 6 переменных:
 -exclude
