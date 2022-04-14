@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div th:each ="header : ${headers.entrySet()}">
+        <p><span th:utext="${header.getKey()}">...</span> -- <span th:utext="${header.getValue()}"></span></p>
+    </div>
+</div>
+</body>
+</html>
