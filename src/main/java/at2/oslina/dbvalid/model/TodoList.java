@@ -1,5 +1,6 @@
 package at2.oslina.dbvalid.model;
 
+import at2.oslina.dbvalid.listener.DbListener;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -17,6 +18,7 @@ import java.util.Set;
 @Table(name = "todo")
 @EqualsAndHashCode(exclude = "events")
 @NoArgsConstructor
+@EntityListeners(DbListener.class)
 public class TodoList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -1,5 +1,6 @@
 package at2.oslina.dbvalid.model;
 
+import at2.oslina.dbvalid.listener.DbListener;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,6 +15,7 @@ import javax.validation.constraints.Size;
 @Data
 @Table(name="event")
 @NoArgsConstructor
+@EntityListeners(DbListener.class)
 public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
